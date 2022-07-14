@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		2D73E074287FDA650040E54E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73E073287FDA650040E54E /* AppDelegate.swift */; };
-		2D73E076287FDA650040E54E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73E075287FDA650040E54E /* ViewController.swift */; };
 		2D73E078287FDA690040E54E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D73E077287FDA690040E54E /* Assets.xcassets */; };
 		2D73E07B287FDA690040E54E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D73E079287FDA690040E54E /* Main.storyboard */; };
 		2D73E086287FDA690040E54E /* qrcodefromselectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D73E085287FDA690040E54E /* qrcodefromselectionTests.swift */; };
@@ -46,20 +45,20 @@
 			name = "Embed XPC Services";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		2DD112D8288064FB00916FF3 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "~/Library/Services";
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		2D23E6D328801E6900B6D950 /* selectedtexttoqrcodeProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selectedtexttoqrcodeProtocol.h; sourceTree = "<group>"; };
-		2D23E6D428801E6900B6D950 /* selectedtexttoqrcode.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = selectedtexttoqrcode.h; sourceTree = "<group>"; };
-		2D23E6D528801E6900B6D950 /* selectedtexttoqrcode.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = selectedtexttoqrcode.m; sourceTree = "<group>"; };
-		2D23E6D728801E6900B6D950 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2D23E6D928801E6900B6D950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D23E6E728801EB100B6D950 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
-		2D23E6EA28801EB100B6D950 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
-		2D23E6EC28801EB100B6D950 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2D73E070287FDA650040E54E /* qrcodefromselection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrcodefromselection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D73E070287FDA650040E54E /* qrcodefromselection.service */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = qrcodefromselection.service; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D73E073287FDA650040E54E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		2D73E075287FDA650040E54E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2D73E077287FDA690040E54E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D73E07A287FDA690040E54E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2D73E07C287FDA690040E54E /* qrcodefromselection.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = qrcodefromselection.entitlements; sourceTree = "<group>"; };
@@ -98,44 +97,12 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2D23E6D228801E6900B6D950 /* selectedtexttoqrcode */ = {
-			isa = PBXGroup;
-			children = (
-				2D23E6D328801E6900B6D950 /* selectedtexttoqrcodeProtocol.h */,
-				2D23E6D428801E6900B6D950 /* selectedtexttoqrcode.h */,
-				2D23E6D528801E6900B6D950 /* selectedtexttoqrcode.m */,
-				2D23E6D728801E6900B6D950 /* main.m */,
-				2D23E6D928801E6900B6D950 /* Info.plist */,
-			);
-			path = selectedtexttoqrcode;
-			sourceTree = "<group>";
-		};
-		2D23E6E628801EB100B6D950 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				2D23E6E728801EB100B6D950 /* Intents.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		2D23E6E928801EB100B6D950 /* qrcodeservice */ = {
-			isa = PBXGroup;
-			children = (
-				2D23E6EA28801EB100B6D950 /* IntentHandler.swift */,
-				2D23E6EC28801EB100B6D950 /* Info.plist */,
-			);
-			path = qrcodeservice;
-			sourceTree = "<group>";
-		};
 		2D73E067287FDA650040E54E = {
 			isa = PBXGroup;
 			children = (
 				2D73E072287FDA650040E54E /* qrcodefromselection */,
 				2D73E084287FDA690040E54E /* qrcodefromselectionTests */,
 				2D73E08E287FDA690040E54E /* qrcodefromselectionUITests */,
-				2D23E6D228801E6900B6D950 /* selectedtexttoqrcode */,
-				2D23E6E928801EB100B6D950 /* qrcodeservice */,
-				2D23E6E628801EB100B6D950 /* Frameworks */,
 				2D73E071287FDA650040E54E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,7 +110,7 @@
 		2D73E071287FDA650040E54E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2D73E070287FDA650040E54E /* qrcodefromselection.app */,
+				2D73E070287FDA650040E54E /* qrcodefromselection.service */,
 				2D73E081287FDA690040E54E /* qrcodefromselectionTests.xctest */,
 				2D73E08B287FDA690040E54E /* qrcodefromselectionUITests.xctest */,
 			);
@@ -155,7 +122,6 @@
 			children = (
 				2D73E0A0287FDBAC0040E54E /* Info.plist */,
 				2D73E073287FDA650040E54E /* AppDelegate.swift */,
-				2D73E075287FDA650040E54E /* ViewController.swift */,
 				2D73E077287FDA690040E54E /* Assets.xcassets */,
 				2D73E079287FDA690040E54E /* Main.storyboard */,
 				2D73E07C287FDA690040E54E /* qrcodefromselection.entitlements */,
@@ -193,6 +159,7 @@
 				2D73E06D287FDA650040E54E /* Frameworks */,
 				2D73E06E287FDA650040E54E /* Resources */,
 				2D23E6DD28801E6900B6D950 /* Embed XPC Services */,
+				2DD112D8288064FB00916FF3 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -200,7 +167,7 @@
 			);
 			name = qrcodefromselection;
 			productName = qrcodefromselection;
-			productReference = 2D73E070287FDA650040E54E /* qrcodefromselection.app */;
+			productReference = 2D73E070287FDA650040E54E /* qrcodefromselection.service */;
 			productType = "com.apple.product-type.application";
 		};
 		2D73E080287FDA690040E54E /* qrcodefromselectionTests */ = {
@@ -313,7 +280,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2D73E076287FDA650040E54E /* ViewController.swift in Sources */,
 				2D76CAF3287FE8DE00560A01 /* QRCodeWindowViewController.swift in Sources */,
 				2D73E074287FDA650040E54E /* AppDelegate.swift in Sources */,
 				2D73E09F287FDACA0040E54E /* QRCodeServiceProvider.swift in Sources */,
@@ -401,6 +367,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_EXTENSION = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -415,6 +382,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSPrincipalClass = "";
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -462,6 +430,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_EXTENSION = "";
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -470,6 +439,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_KEY_NSPrincipalClass = "";
 				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -490,13 +460,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FS7X9R3KL4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXECUTABLE_EXTENSION = service;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qrcodefromselection/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				INSTALL_PATH = "${LOCAL_APPS_DIR}";
+				INSTALL_PATH = "~/Library/Services";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -506,6 +477,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Debug;
 		};
@@ -520,13 +492,14 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = FS7X9R3KL4;
 				ENABLE_HARDENED_RUNTIME = YES;
+				EXECUTABLE_EXTENSION = service;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = qrcodefromselection/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_NSMainStoryboardFile = Main;
 				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
-				INSTALL_PATH = "${LOCAL_APPS_DIR}";
+				INSTALL_PATH = /Library/Services;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -536,6 +509,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				WRAPPER_EXTENSION = service;
 			};
 			name = Release;
 		};

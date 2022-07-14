@@ -14,14 +14,6 @@ class QRCodeWindowViewController: NSViewController {
     var qrString: String? = nil
     var codeDrawn: Bool = false
 
-    override func viewWillAppear() {
-        print("QRCode window will appear")
-    }
-    
-    override func viewDidDisappear() {
-        print("QRCode window will disappear")
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("QRCode window loaded")
@@ -58,6 +50,5 @@ class QRCodeWindowViewController: NSViewController {
         print("QR code drawn")
         return true
     }
-
 
 }
