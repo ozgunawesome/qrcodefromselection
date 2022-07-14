@@ -70,6 +70,7 @@
 		2D73E09E287FDACA0040E54E /* QRCodeServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeServiceProvider.swift; sourceTree = "<group>"; };
 		2D73E0A0287FDBAC0040E54E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		2D76CAF2287FE8DE00560A01 /* QRCodeWindowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeWindowViewController.swift; sourceTree = "<group>"; };
+		2DCEE35128808DE9005DABA7 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +101,7 @@
 		2D73E067287FDA650040E54E = {
 			isa = PBXGroup;
 			children = (
+				2DCEE35128808DE9005DABA7 /* README.md */,
 				2D73E072287FDA650040E54E /* qrcodefromselection */,
 				2D73E084287FDA690040E54E /* qrcodefromselectionTests */,
 				2D73E08E287FDA690040E54E /* qrcodefromselectionUITests */,

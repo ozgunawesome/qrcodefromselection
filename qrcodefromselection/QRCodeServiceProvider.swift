@@ -38,6 +38,5 @@ class QRCodeServiceProvider: NSObject {
         alert.informativeText = detailedMessage!
         alert.runModal()
     }
-    
 
 }
